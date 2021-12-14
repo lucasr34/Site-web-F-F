@@ -1,0 +1,198 @@
+/*GUERRA Lucas  PFI*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('images/Dom.jpg');
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+header button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: grey;
+    
+}
+button:visited{
+    color: red;
+    border: 2px solid red;
+}
+
+.principal{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal .contenu .presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.principal .contenu .presentation .gauche{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.principal .contenu .presentation.droite{
+    flex: 0 0 70%;
+}
+.principal .contenu .presentation .droite img{
+    height: 300px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #bureau{
+    color: rgb(181, 181, 181)
+}
+.tableau-style{
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    margin: 100px auto;
+    border: 2px solid black;
+    cursor: pointer;
+}
+thead tr{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+th, td{
+    padding: 15px 20px;
+}
+tbody tr, td, th{
+    border: 1px solid grey;
+}
+td:nth-child(even){
+    background-color: rgb(189, 188, 188);
+}
+.titres{
+    text-align: center;
+    margin-bottom: -25px;
+    font-size: xx-large;
+}
+div .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .principal .presentation{
+        margin: 10px;
+    }
+    .principal .contenu .presentation .droite img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .principal .contenu .presentation{
+        display: block;
+    }
+    footer{
+        margin: 30px;
+    }
+}
+    
